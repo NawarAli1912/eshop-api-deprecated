@@ -4,7 +4,7 @@ using eshop.Domain.Products.ValueObjects;
 
 public class LineItem
 {
-    public LineItemId Id { get; private set; }
+    public LineItemId Id { get; private set; } = default!;
 
     public OrderId OrderId { get; private set; }
 

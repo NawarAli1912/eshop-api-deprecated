@@ -26,9 +26,9 @@ public class Order
         }
     }
 
-    public OrderId Id { get; private set; }
+    public OrderId Id { get; private set; } = default!;
 
-    public CustomerId CustomerId { get; private set; }
+    public CustomerId CustomerId { get; private set; } = default!;
 
     private Order(CustomerId customerId)
     {
