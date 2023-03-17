@@ -6,9 +6,9 @@ public class LineItem
 {
     public LineItemId Id { get; private set; } = default!;
 
-    public OrderId OrderId { get; private set; }
+    public OrderId OrderId { get; private set; } = default!;
 
-    public ProductId ProductId { get; private set; }
+    public ProductId ProductId { get; private set; } = default!;
 
     public Money Price { get; private set; }
 

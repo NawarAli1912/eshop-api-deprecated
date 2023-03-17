@@ -7,6 +7,8 @@ public class Product
 {
     public ProductId Id { get; private set; } = default!;
 
+    public CategoryId CategoryId { get; private set; } = default!;
+
     public string Name { get; private set; } = string.Empty;
 
     public Money Price { get; private set; } = default!;
@@ -15,6 +17,7 @@ public class Product
 
     private Product(
         ProductId id,
+        CategoryId categoryId,
         string name,
         Money price,
         Sku sku)
@@ -27,10 +30,11 @@ public class Product
 
     public static Product Create(
         ProductId id,
+        CategoryId categoryId,
         string name,
         Money price,
         Sku sku)
     {
-        return new Product(id, name, price, sku);
+        return new Product(id, categoryId, name, price, sku);
     }
 }
