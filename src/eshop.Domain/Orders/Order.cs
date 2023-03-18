@@ -9,8 +9,12 @@ namespace eshop.Domain.Orders;
 public class Order
 {
     private readonly HashSet<LineItem> _lineItems = new();
-
     private ImmutableHashSet<LineItem> _immutableLineItems = default!;
+
+    public OrderId Id { get; private set; } = default!;
+
+    public CustomerId CustomerId { get; private set; } = default!;
+
     public IImmutableSet<LineItem> LineItems
     {
         get
@@ -25,10 +29,6 @@ public class Order
             return _immutableLineItems;
         }
     }
-
-    public OrderId Id { get; private set; } = default!;
-
-    public CustomerId CustomerId { get; private set; } = default!;
 
     private Order(CustomerId customerId)
     {
