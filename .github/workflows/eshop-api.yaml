@@ -39,6 +39,9 @@ jobs:
       with:
         dotnet-version: 7.0.x
 
+    - name: setup database SDK
+      run: dotnet add package Microsoft.NETFramework.ReferenceAssemblies --version 1.0.2
+    
     - name: Restore
       run: dotnet restore
 
