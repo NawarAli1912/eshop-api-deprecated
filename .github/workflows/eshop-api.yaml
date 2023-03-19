@@ -1,13 +1,6 @@
 name: "Build"
 
 on:
-  push:
-    branches:
-      - '**'
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
   pull_request:
     branches:
       - master
@@ -48,6 +41,10 @@ jobs:
 
     - name: Restore
       run: dotnet restore
+      
+    # Run build for SDK package
+    - name: dotnet build SDK
+      run: dotnet build ./src/MSBuild.Sdk.SqlProj/MSBuild.Sdk.SqlProj.csproj -c Release
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
