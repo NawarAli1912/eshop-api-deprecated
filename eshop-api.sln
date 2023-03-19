@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eshop.Persistence", "src\es
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AppDB", "AppDB\AppDB.sqlproj", "{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshop.Api", "eshop.Api\eshop.Api.csproj", "{1B4C6291-3B15-4CAE-A12E-A22A07A2A933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eshop.Api", "eshop.Api\eshop.Api.csproj", "{1B4C6291-3B15-4CAE-A12E-A22A07A2A933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshop.Shared", "eshop.Shared\eshop.Shared.csproj", "{03C70FE3-B5D2-4AF1-8AF0-5C1E0A067430}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eshop.Shared", "eshop.Shared\eshop.Shared.csproj", "{03C70FE3-B5D2-4AF1-8AF0-5C1E0A067430}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,7 +28,6 @@ Global
 		{8173494D-762D-4D10-824E-63DC43909F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8173494D-762D-4D10-824E-63DC43909F28}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB70C70-52F9-4BD6-94F3-4E5BA739BDB2}.Release|Any CPU.Build.0 = Release|Any CPU
