@@ -36,6 +36,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseMiddleware<PaginationMiddleware>();
-
 app.Run();

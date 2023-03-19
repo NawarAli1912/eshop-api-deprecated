@@ -1,7 +1,9 @@
 ﻿namespace Shared.Paging;
 
-public class PagedList<T> : List<T>
+public class PagedList<T>
 {
+    public List<T> Items { get; init; } = new();
+
     public int CurrentPage { get; private set; }
 
     public int TotalPages { get; private set; }
@@ -21,6 +23,6 @@ public class PagedList<T> : List<T>
         CurrentPage = pageNumber;
         TotalPages = (int)Math.Ceiling(count / (double)pageSize);
 
-        AddRange(items);
+        Items.AddRange(items);
     }
 }
